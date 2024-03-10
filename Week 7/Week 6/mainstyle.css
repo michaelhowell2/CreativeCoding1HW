@@ -1,0 +1,54 @@
+
+span.gold{
+    color:rgb(2, 2, 2);
+    background-color:rgb(196, 192, 0);
+}
+
+span.text
+
+{text-align: center;
+
+}
+
+
+
+
+.redColor{
+    color:rgb(255, 0, 0);
+    font-family:Verdana;
+    font-size:24px;
+}
+
+span.redColor{
+    color:rgb(255, 0, 0);
+    font-family:arial;
+    font-size:24px;
+}
+
+
+span.fontsize{
+    font-family:arial;
+    font-size:20px;
+
+}
+
+
+
+#specificColor{
+    color:blue;
+    font-family:verdana;
+    font-size:24px;
+}
+
+#specificLink{
+    color:red;
+    font-family:arial;
+    font-size:28px;
+}
+
+
+
+
+span {
+  content: "\260E";
+} 
