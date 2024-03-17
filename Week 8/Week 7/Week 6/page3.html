@@ -1,0 +1,122 @@
+<title>Forms</title>
+
+
+
+
+
+    <head>
+        
+      <link rel="stylesheet" type="text/css"href="mainstyle.css">
+      <style>
+        .green {
+          background-color:white;
+        }
+        .red {
+          background-color:red;
+        }
+      </style>
+
+        
+        <script>
+            function getData()
+            {
+                var firstname = document.getElementById("fName").value;
+                var lastName = document.getElementById("lName").value;
+                var phone = document.getElementById("Pnumber").value;
+                var Email = document.getElementById("Email").value;
+
+
+                window.alert("First Name: " + firstname + "Last Name: " + lastName +"Phone: " + phone + "Email: " + Email);
+            }
+
+            function affirmData(oForm)
+{
+	var oCheckbox = oForm.elements.agree;
+	if (oCheckbox.checked)
+	{
+		var OK = confirm('Please confirm: all information entered is accurate.\
+\
+Thank you.');
+		if (!OK)
+			return (oCheckbox.checked = false);
+	}
+	else
+	{
+		alert('Please check the "agreement" box to continue.');
+		oForm.elements.agree.focus();
+		return false;
+	}
+}
+
+function checkFilled() {
+    var inputVal = document.getElementById("fName").value;
+    if (inputVal == "Red") {
+        document.getElementById("fName").style.backgroundColor = "Red";
+    }
+    else if(inputVal == "white"){
+        document.getElementById("fName").style.backgroundColor = "white";
+    }
+}
+
+function show(mytext){
+     console.log(mytext.value,mytext.value == "")
+      if (mytext.value == "") {
+        mytext.classList.add("red")
+        mytext.classList.remove("white")
+      }
+      else {
+        mytext.classList.add("white")
+        mytext.classList.remove("red")
+  
+      }
+    }
+
+
+
+        </script> 
+        
+       
+
+
+       
+        
+    </head>
+
+    <style>
+        h1 {text-align: center;}
+        p {text-align: center;}
+       h2 {text-align: center;}
+
+      
+    
+        
+     </style>
+    
+    <body>
+        <form action="javascript&#58;alert('ok')" method="get" onsubmit="return affirmData(this)">
+
+            <h1><u>BOOK NOW</u></h1>
+            <h1><span class="gold">First Name:  <input type="text" id="fName" class="red" onkeyup="show(this)" onkeyup="checkFilled();"/></h1></span><br>
+            <h1>Last Name: <input type="text" id="lName" class="red" onkeyup="show(this)" onkeyup="checkFilled();"/></h1><br>
+            <h1><span class="gold">Phone Number: <input type="text" class="red" id="Pnumber"  onkeyup="show(this)" onkeyup="checkFilled();"/></span></h1><br>
+            <h1>Email: <input type=" text" id="Email" class="red" onkeyup="show(this)" onkeyup="checkFilled();"/></h1><br>
+            
+            
+           
+            
+             <h2><b>By submitting, I affirm that all information entered is accurate & truthful.</b>
+            <br /><br /></h2>
+            <h2>Righto Chap! <input type="checkbox" name="agree" value="1" />
+            <br /><br /></h2>
+            <h2><button id="btnSubmit" onClick="getData();">Submit</button></h2>
+            <h2><input type="button" value="Exit" onclick="self.location='/index.html'" /></h2>
+            </form>
+    </body>
+
+    <embed src="LOGO.jpg" 
+
+style="max-width:100%;height:auto;border: 3px solid rgb(0, 0, 0);">
+ </html>
+
+
+ 

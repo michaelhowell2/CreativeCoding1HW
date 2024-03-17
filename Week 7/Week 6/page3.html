@@ -1,5 +1,22 @@
 <html>
-    <style>
+    <link rel="stylesheet" type="text/css"href="mainstyle.css"
+
+ 
+
+    <head>
+        <script>
+            function check() {
+  var element = document.getElementById("input");
+  if (element.value != "") {
+    document.write("Valid!");
+  } else {
+    element.classList.add("invalid");
+  }
+}
+        </script>
+        </head>
+
+ <style>
         h1 {text-align: center;}
         p {text-align: center;}
         div {text-align: center;}
@@ -7,19 +24,6 @@
 
         
      </style>
-<head>
-    <link rel="stylesheet" type="text/css"href="mainstyle.css"
-
-
-
-       
-
-
-   
-
-    </head>
-
-
 
 <body>
 <h1><u>BOOK NOW</u></h1>
@@ -29,7 +33,7 @@
 <h1>Email: <input type="text" id="Email"></h1><br>
 
 
-<h1><button type="submit" form="nameform" value="Submit">Submit</button></h1>
+<h1><button type="submit" form="nameform" value="Submit"onclick="check();">Submit</button></h1>
  
 
 </body>
@@ -47,3 +51,5 @@
 
 </html>
 
+<input type="text" placeholder="Type Something..." id="input">
+<button onclick="check();">Check</button>
