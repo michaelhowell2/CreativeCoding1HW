@@ -9,11 +9,11 @@ https://spin.atomicobject.com/generative-art-zero-random/
 
 I also thought of doing a lava lamp.
 
-but I think I settled on
+but I think I settled on something like this 
 
  https://editor.p5js.org/tz1440/sketches/BSxNSEDXo
 
- but "more" and have it change multiple times using various colors. I want to add music, which I had trouble with, but I found out I needed to add a start button of sorts to allow it to play, as Chrome hates autoplay, I guess... so I'm going to create particles on Canvas to look like this...
+ but bigger in scope and practice. It will change multiple times (probably five times) using various colors. I want to add music, which I had trouble with, but I found out I needed to add a start button of sorts to allow it to play, as Chrome hates autoplay, I guess. So, I'm going to create particles on Canvas to look like this link (sort of)
 
  https://fineartamerica.com/featured/holographic-real-texture-in-blue-pink-green-colors-with-scratches-and-irregularities-n-akkash.html?product=art-print
 
