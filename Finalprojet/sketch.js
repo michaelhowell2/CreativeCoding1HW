@@ -184,7 +184,6 @@ constructor(x, y) {
     this.size = random(5, 15);
 }
 
-
     update() {
         // Update particle position and lifespan
     
